@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define your color variables */
+:root {
+  --background: #ffffff;
+  --foreground: #121212;
+  --card: #ffffff;
+  --card-foreground: #121212;
+  --popover: #ffffff;
+  --popover-foreground: #121212;
+  --primary: #1e3a8a;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #121212;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #f3f4f6;
+  --accent-foreground: #121212;
+  --destructive: #f87171;
+  --destructive-foreground: #ffffff;
+  --border: #d1d5db;
+  --input: #d1d5db;
+  --ring: #1e3a8a;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: #121212;
+  --foreground: #ffffff;
+  --card: #121212;
+  --card-foreground: #ffffff;
+  --popover: #121212;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #121212;
+  --secondary: #1f2937;
+  --secondary-foreground: #ffffff;
+  --muted: #1f2937;
+  --muted-foreground: #a1a1aa;
+  --accent: #1f2937;
+  --accent-foreground: #ffffff;
+  --destructive: #fca5a5;
+  --destructive-foreground: #ffffff;
+  --border: #1f2937;
+  --input: #1f2937;
+  --ring: #a1a1aa;
+}
+
+/* Apply the font globally */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Poppins', sans-serif; /* Ensure Poppins is applied */
+}
+
+/* Additional Styling for Cards, Popovers, etc. */
+.card {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border-radius: var(--radius);
+}
+
+.popover {
+  background-color: var(--popover);
+  color: var(--popover-foreground);
+  border-radius: var(--radius);
+}
+
+/* Input Styling */
+input {
+  background-color: var(--input);
+  border-radius: var(--radius);
+}
+
+/* Border Styling */
+* {
+  border-color: var(--border);
+}
+
+/* Ring Styling */
+:ring {
+  border-color: var(--ring);
+}
